@@ -1,5 +1,7 @@
 let bannerItems = document.querySelectorAll('.banner-item');
 let currentBanner = 0;
+let count = 1;
+document.getElementById("radio1").checked = true;
 const btnDarkModeToggle = document.getElementById('btn-dark-mode-toggle')
 const themeSystem = localStorage.getItem('themeSystem') || 'light'
 
@@ -9,6 +11,8 @@ function rotateBanner() {
     currentBanner = (currentBanner + 1) % bannerItems.length;
     bannerItems[currentBanner].classList.add('active');
 }
+
+setInterval(rotateBanner, 5000);
 
 btnDarkModeToggle.addEventListener('click', () => {
     let oldTheme = localStorage.getItem('themeSystem') || 'light'
@@ -29,6 +33,23 @@ function defineCurrentTheme(theme){
     btnDarkModeToggle.innerHTML = lightSvg
 }
 
+setInterval( function(){
+    nextImage();
+}, 5000)
+
+function nextImage(){
+    count++;
+    if(count>4){
+        count = 1;
+    }
+
+    document.getElementById("radio"+count).checked = true;
+
+}
+
 defineCurrentTheme(themeSystem)
 
-setInterval(rotateBanner, 5000);
+
+document.getElementById("myButton").addEventListener("click", function() {
+    document.getElementById("promptMessage")
+  });

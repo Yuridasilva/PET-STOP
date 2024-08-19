@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Pet Peludinhos</title>
+    <title>Pet Peludinho</title>
 </head>
 
 <body>
@@ -25,7 +26,7 @@
             <li><a href="#">Sobre</a></li>
 
             <i class="material-icons">phone_enabled</i>
-            <li><a href="#">Contato</a></li>
+            <li><a href="contats">Contato</a></li>
 
         </ul>
         
@@ -37,28 +38,76 @@
         </form>
     </nav>
 
+
+
+
     <!--Sidebar - 2 -->
+    <aside class="menu-lateral">
     <div class="sidebar">
         <h2>Menu</h2>
         <ul>
             <li><a href="login.html">Login</a></li>
-            <li><a href="#">Cadastro</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
             <li><a href="#">Serviços</a></li>
-            <li><a href="#">Localizaçao</a></li>
+            <li><a href="https://www.google.com.br/maps/place/Pet+Peludinho/data=!4m7!3m6!1s0x94ce49c0e23d8551:0x549a712e547d8f62!8m2!3d-23.7740424!4d-46.6821833!16s%2Fg%2F11w1k_fz8b!19sChIJUYU94sBJzpQRYo99VC5xmlQ?authuser=0&amp;hl=pt-BR&amp;rclk=1">Localização</a></li>
         </ul>
     </div>
+   </aside>
 
     <!--main -3 -->
     <main>
         <!--Section 1-->
         <section>
+
             <div class="section-1">
-                <img src="imgs/cachorro.webp" class="cachorro">
-                <h2>Pet Store Grooming</h2>
+
+                <div class="slider">
+
+                    <div class="slides">
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <input type="radio" name="radio-btn" id="radio4">
+
+                        <div class="slide first">
+                            <img src="imgs/cachorro.jpg" alt="Imagem1">
+                    </div>
+                        
+                        <div class="slide">
+                            <img src="imgs/gatos.jpg" alt="Imagem2">
+                        </div>
+
+                        <div class="slide">
+                            <img src="imgs/hasmiter.png" alt="Imagem3">
+                        </div>
+
+                        <div class="slide">
+                            <img src="imgs/peixe.jpg" alt="Imagem4">
+                        </div>
+
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                        </div>
+                
+                </div>
+
+                   <div class="manual-navigation">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                   </div>
+            </div>
+
+                <h2>Pet Peludinho</h2>
                 <p>Aqui você encontra o que há de melhor para seu pet:
                     alimentos, suplementos ,medicamentos, banho, tosa e muito
                     mais...
                 </p>
+            
             </div>
         </section>
 
@@ -85,10 +134,10 @@
             <h2>Depoimentos</h2>
             <img src="imgs/dog_estilo.jpg" class="dog_estilo">
             <p>Gostaria de expressar minha sincera gratidão a toda a
-                equipe do Pet Store Grooming! Desde o primeiro contado ,
-                fui recebido com muito carinho e atenção. O atendimento
+                equipe do Pet Peludinho! Desde o primeiro contado ,
+                fui recebido com muito carinho e atenção. <strong> O atendimento
                 foi excepcional e todos desmonstraram um profundo
-                conhecimento sobre os cuidados com os pets . Meu Snoopy
+                conhecimento sobre os cuidados com os pets </strong>. Meu Snoopy
                 ficou super feliz e bem tratado durante a visita!
                 att. Loise
             </p>
@@ -108,6 +157,7 @@
             <p>Aqui seu cao está sempre</p>
             <p>feliz e em boas maos.</p>
         </div>
+
         <div class="card">
             <img src="imgs/products.jpg" alt="products">
             <h3>Produtos</h3>
@@ -117,9 +167,10 @@
         </div>
     </div>
     </main>
+
     <!-- Footer -->
     <footer>
-        <p>&copy; 2023 Pet Store Grooming contato@psgrooming.com.br</p>
+        <p>&copy; 2023 Pet Peludinho contato@petpeludinho.com.br</p>
     </footer>
 
     <script src="scripts/script.js"></script>

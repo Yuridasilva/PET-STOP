@@ -62,8 +62,7 @@ nav {
     align-items: center;
     padding: 10px;
     background-color: var(--blue);
-    color: #f1f1f1;
-    
+    color: var(--white);  
 }
 
 nav ul {
@@ -101,7 +100,7 @@ nav a:hover {
 .search-form button[type="submit"] {
     padding: 10px;
     border: none;
-    height: 43px;
+    height: 39px;
     border-radius: 0px 5px 5px 0px;
     background-color: #00A1E4;
     color: #f1f1f1;
@@ -169,7 +168,7 @@ nav a:hover {
         width: 200px;
         height: 100%;
         background-color: var(--blue);
-        color: #f1f1f1;
+        color: var(--white);
         padding: 20px;
         display: flex;
         flex-direction: column;
@@ -178,7 +177,7 @@ nav a:hover {
     }
 
     .sidebar h2 {
-        margin-top: 0;
+        margin-top: 10px;
     }
 
     .sidebar ul {
@@ -188,16 +187,17 @@ nav a:hover {
     }
 
     .sidebar li {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
+        width: 100px;
     }
 
     .sidebar a {
-        color: #f1f1ff;
+        color: var(--white);
         text-decoration: none;
     }
 
     .sidebar a:hover {
-        color: #00A1E4;
+        color: var(--orange);
     }
 
     main {
@@ -225,10 +225,107 @@ nav a:hover {
         padding: 2em;
     }
 
-.cachorro{
-    width: 700px;
-    height: 500px;
+.slider{
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slider input {
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img{
+    width: 800px;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
     border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: #fff;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~.first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~.first{
+    margin-left: -75%;
+}
+
+.navigation-auto div{
+    border: 2px solid #20a6ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #fff;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #fff;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #fff;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #fff;
 }
 
 .dog_estilo{

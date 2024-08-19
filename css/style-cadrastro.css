@@ -11,11 +11,11 @@ body{
 
 .box-geral{
     background-color: #55c7f8b4;
-    width: 320px;
-    height: 400px;
-    margin-left: 710px;
-    margin-top: 180px;
-    box-shadow: 2px 2px 12px 2px #333;
+    width: 420px;
+    height: 550px;
+    margin-left: 670px;
+    margin-top: 100px;
+    box-shadow: 2px 2px 2px 2px #333;
     border-radius: 7px;
     display: flex;
     text-align: center;
@@ -28,19 +28,14 @@ form img{
     height: 80px;
     border-radius: 100%;
     margin-bottom: 5px;
+    margin-left: 80px;
 }
 
 form h1{
     margin-bottom: 10px;
 }
 
-form a {
-    text-decoration: none;
-    
-}
-
-
-.input{
+input{
     width: 200px;
     height: 40px;
     border: transparent;
@@ -51,16 +46,22 @@ form a {
 form input[type=submit] {
     display: block;
     font-size: 1em;
-    margin-left: 110px;
+    margin-left: 170px;
     width: 100px;
     height: 40px;
-    background-color: #19a3df;
+    background-color:  #19a3df;
     border-radius: 5px;
     cursor: pointer;
     border: none;
     margin-bottom: 10px;
+    margin-left: 160px;
+}
+
+h1 ,label{
+    margin-left: 50px;
 }
 
 form input[type=submit]:hover {
-    background-color: rgb(61, 97, 243);
+    background-color:  rgb(61, 97, 243);
+
 }
