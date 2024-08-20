@@ -7,9 +7,9 @@
 }
 
 [data-theme="dark"]{
-    --white: #0a0a0a;
+    --white: #202020;
     --black: #f1f1f1;
-    --blue: #ffa500;
+    --blue: #f8c566;
     --black1: #f1f1f1;
     --orange: #175EA8;
 }
